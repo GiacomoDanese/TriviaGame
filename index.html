@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Star Trek Trivia</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+<body>
+	<header id="masthead">
+		<div class="container">
+			<h1 class=strtrkfont>Star Trek Trivia</h1>
+		</div>
+	</header>
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1 class="rules" class="strtrkfont">The Rules</h1>
+			<p class="rules" class="strtrkfont">You have <span id="show-time"><span/> seconds to answer 10 questions</p>
+			
+			<h2>
+				<button type="button" id="start-button">Start</button>
+			</h2>
+
+			<div id="show-time"></div>
+			<!-- //question #1. -->
+			<p class="question">1. Who was captain of the U.S.S. Enterprise NCC-1701 in the original series? </p>
+				<ul class="answers">
+					<input type="radio" name="a1" id="false"><label>Picard</label><br>
+					<input type="radio" name="a1" id="false"><label>Spock</label><br>
+					<input type="radio" name="a1" id="false"><label>Janeway</label><br>
+					<input type="radio" name="a1" id="true"><label>Kirk</label><br>
+				</ul>
+
+			<!-- //question #2. -->
+			<p class="question">2. Who was the chief of security on Voyager? </p>
+				<ul class="answers">
+					<input type="radio" name="a2" id="true"><label>Tuvok</label><br>
+					<input type="radio" name="a2" id="false"><label>Worf</label><br>
+					<input type="radio" name="a2" id="false"><label>Tasha Yar</label><br>
+					<input type="radio" name="a2" id="false"><label>Geordi</label><br>
+				</ul>
+
+			<!-- //question #3. -->
+			<p class="question">3. What species was Jadzia Dax?</p>
+				<ul class="answers">
+					<input type="radio" name="a3" id="false"><label>Ferengi</label><br>
+					<input type="radio" name="a3" id="false"><label>Bajoran</label><br>
+					<input type="radio" name="a3" id="true"><label>Trill</label><br>
+					<input type="radio" name="a3" id="false"><label>Klingon</label><br>
+				</ul>
+
+			<!-- //question #4. -->
+			<p class="question">4. Who won at the Battle of Wolf 359 </p>
+				<ul class="answers">
+					<input type="radio" name="a4" id="false"><label>The Cardassian Union</label><br>
+					<input type="radio" name="a4" id="false"><label>United Federation of Planets</label><br>
+					<input type="radio" name="a4" id="true"><label>The Borg</label><br>
+					<input type="radio" name="a4" id="false"><label>The Romulan Empire</label><br>
+				</ul>
+
+			<!-- //question #5. -->
+			<p class="question">5. Who was the Cheif Medical Officer in Deep Space 9?  </p>
+				<ul class="answers">
+					<input type="radio" name="a5" id="false"><label>The Doctor</label><br>
+					<input type="radio" name="a5" id="true"><label>Dr. Julian Basher</label><br>
+					<input type="radio" name="a5" id="false"><label>Dr. Beverly Crusher</label><br>
+					<input type="radio" name="a5" id="false"><label>Dr. Leonard McCoy</label><br>
+				</ul>
+
+			<!-- //question #6. -->
+			<p class="question">6. What quadrant was the Dominion originally from?</p>
+				<ul class="answers">
+					<input type="radio" name="a6" id="false"><label>Alpha</label><br>
+					<input type="radio" name="a6" id="false"><label>Beta</label><br>
+					<input type="radio" name="a6" id="false"><label>Gamma</label><br>
+					<input type="radio" name="a6" id="true"><label>Delta</label><br>
+				</ul>
+
+			<!-- //question #7. -->
+			<p class="question">7. What does IDIC stand for? </p>
+				<ul class="answers">
+					<input type="radio" name="a7" id="false"><label>Incredibly Dull Incineration Chamber</label><br>
+					<input type="radio" name="a7" id="true"><label>Infinite Diversity in Infinite Combinations</label><br>
+					<input type="radio" name="a7" id="false"><label>Independently Designated Internet Constant</label><br>
+					<input type="radio" name="a7" id="false"><label>Institute of Design and Integral Calculus</label><br>
+				</ul>
+
+			<!-- //question #8. -->
+			<p class="question">8. What artificial organ does Jean-Luc-Picard have?</p>
+				<ul class="answers">
+					<input type="radio" name="a8" id="true"><label>Heart</label><br>
+					<input type="radio" name="a8" id="false"><label>Brain</label><br>
+					<input type="radio" name="a8" id="false"><label>Liver</label><br>
+					<input type="radio" name="a8" id="false"><label>Stomach</label><br>
+				</ul>
+
+			<!-- //question #9. -->
+			<p class="question">9. Which one of these is NOT a starship class in the Star Trek Universe</p>
+				<ul class="answers">
+					<input type="radio" name="a9" id="false"><label>Constitution-class</label><br>
+					<input type="radio" name="a9" id="false"><label>Danube-class</label><br>
+					<input type="radio" name="a9" id="false"><label>Galaxy-class</label><br>
+					<input type="radio" name="a9" id="true"><label>Firefly-class</label><br>
+				</ul>
+
+			<!-- //question #10. -->
+			<p class="question">10. What is the id of the upcoming StarTrek Series?</p>
+				<ul class="answers">
+					<input type="radio" name="a10" id="false"><label>Engage: A Star Trek Meme</label><br>
+					<input type="radio" name="a10" id="false"><label>Star Trek: The Rise of the Federation</label><br>
+					<input type="radio" name="a10" id="true"><label>Star Trek: Discovery</label><br>
+					<input type="radio" name="a10" id="false"><label>Star Trek: Begins</label><br>
+				</ul>
+
+				<div id="results"></div>
+
+
+				<button type="button" id="restart">Play Again</button>
+
+			
+		</section>
+		
+	</div>
+</body>
+</html>
